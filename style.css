@@ -1,0 +1,159 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ul,
+li,
+form,
+label,
+input,
+a,
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 120px;
+}
+body {
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 50%),
+      rgba(0, 0, 0, 50%)
+    )
+    url(https://ideyka.com.ua/files/resized/products/4321.1800x1800.jpg)  center cover no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1rem;
+}
+p::first-letter {
+  color: red;
+}
+p::first-line {
+  color: blue;
+}
+/*h1:hover::after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background-color:red;
+}*/
+/*h1::before{
+  conten: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue
+}
+h1::after{
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: darkgrey
+
+}*/
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.galery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(7, 100px);
+  grid-template-rows: repeat(4, 100px);
+}
+.galery-item:nth-child(1) {
+  grid-area: 1 / 1 / 5 / 2;
+  display: flex;
+  align-items: center;
+}
+.galery-item:nth-child(2) {
+  grid-area: 1 / 2 / 3/ 3;
+  display: flex;
+  align-items: flex-end;
+}
+.galery-item:nth-child(3) {
+  grid-area: 3 / 2 / 5 / 3;
+  display: flex;
+  align-items: flex-start;
+}
+
+.galery-item:nth-child(4) {
+  grid-area: 1 / 3 / 3 / 5;
+}
+.galery-item:nth-child(4) img {
+  height: 200px;
+  width: 200px;
+}
+.galery-item:nth-child(5) {
+  grid-area: 3 / 3 / 5 / 4;
+}
+.galery-item:nth-child(6) {
+  grid-area: 1 / 5 / 3 / 6;
+  display: flex;
+  align-items: flex-end;
+}
+.galery-item:nth-child(7) {
+  grid-area: 3 / 5 / 5 / 6;
+  display: flex;
+  align-items: flex-start;
+}
+.galery-item:nth-child(8) {
+  grid-area: 1 / 6 / 3 / 7;
+  display: flex;
+  align-items: flex-end;
+}
+.galery-item:nth-child(9) {
+  grid-area: 3 / 6 / 5 / 7;
+  display: flex;
+  align-items: flex-start;
+}
+.galery-item:nth-child(10) {
+  grid-area: 1 / 7 / 5 / 8;
+  display: flex;
+  align-items: center;
+}
+.nav-item::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  /*background-color: red;*/
+  background-image: url(https://www.flaticon.com/free-icon/heart_1077086);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero {
+  padding: 200px 0;
+  text-align: center;
+
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbt702uU5-b1NGGqXUJfsZ53oSLjTs3JqWgA&s);
+  background-size: contain;*/
+  /*background-repeat: no-repeat;*/
+  background-position: center;
+  /*background-clip: padding-box;*/
+  background-origin: padding-box;
+}
